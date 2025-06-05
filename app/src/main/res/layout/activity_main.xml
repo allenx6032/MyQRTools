@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <!-- left -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="50dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#EC407A"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/btn_create"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:text="二维码生成"
+                            android:textSize="20sp"
+                            android:onClick="QR_create"
+                            android:gravity="center"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:textColor="#FFFFFF"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#5C6BC0"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/btn_scan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:onClick="QR_scan"
+                            android:text="扫描二维码"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/get_clip"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#EF6C00"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:onClick="QR_getclip"
+                            android:text="取剪切板"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+
+            <!-- right -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#42A5F5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:onClick="vcf_create"
+                            android:text="联系人二维码"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:background="?android:attr/selectableItemBackground"
+                            />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#00BFA5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:onClick="more_create"
+                            android:text="批量生成"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:background="?android:attr/selectableItemBackground"
+                            />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#607D8B"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:onClick="wifi_config"
+                            android:text="共享WiFi连接"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

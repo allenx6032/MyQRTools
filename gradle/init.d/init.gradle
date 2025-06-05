@@ -1,0 +1,48 @@
+/*
+ * Copyright (c) 2016-present 贵州纳雍穿青人李裕江<1032694760@qq.com>
+ *
+ * The software is licensed under the Mulan PSL v2.
+ * You can use this software according to the terms and conditions of the Mulan PSL v2.
+ * You may obtain a copy of Mulan PSL v2 at:
+ *     http://license.coscl.org.cn/MulanPSL2
+ * THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR
+ * PURPOSE.
+ * See the Mulan PSL v2 for more details.
+ */
+
+buildscript {
+    repositories {
+        maven { url 'https://mvnrepository.com/artifact' }
+        maven { url 'https://repo1.maven.org/maven2' }
+        maven { url 'https://repo.maven.apache.org/maven2' }
+        maven { url 'https://mirrors.cloud.tencent.com/gradle' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/grails-core' }
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots' }
+        maven { url 'https://jitpack.io' }
+        google()
+    }
+}
+    
+allprojects {
+    repositories {
+        maven { url 'https://mvnrepository.com/artifact' }
+        maven { url 'https://repo1.maven.org/maven2' }
+        maven { url 'https://repo.maven.apache.org/maven2' }
+        maven { url 'https://mirrors.cloud.tencent.com/gradle' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/grails-core' }
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots' }
+        maven { url 'https://jitpack.io' }
+        google()
+    }
+}
